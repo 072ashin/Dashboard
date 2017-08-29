@@ -76,7 +76,7 @@ function changing(){
 </div>
  <form name="form1" class="form-signin" method="post" onsubmit="return beforeSubmit()" action="checkuser.php">
         <h2 class="form-signin-heading" >Welcome!</h2>
-        <input type="text" name="id" class="input-block-level" placeholder="Admin ID">
+        <input type="text" name="userno" class="input-block-level" placeholder="Admin ID">
         <input type="password" name="password" class="input-block-level" placeholder="Password">
         <p><input type="text" style="float: left;" name="code" id="code" class="input-small"  placeholder="Verification code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <img src="checkcode.php" width="75" height="25" id="checkpic" onClick="changing()" style="cursor:pointer" /></p>

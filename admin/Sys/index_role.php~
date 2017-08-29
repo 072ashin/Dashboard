@@ -48,8 +48,8 @@
     </thead>
 	<?php 
 	include("../../conn.php");
-	$id=$_COOKIE["myadmin"];
-	if ($_POST[submit]=="search")
+	$userno=$_COOKIE["myadmin"];
+	if ($_POST[submit]=="ser")
 	{
 		$S_id=$_POST[id];
 		$sql="select id,lastLoginDateTime from adminInfo ";
@@ -72,7 +72,7 @@
 			
 	if ($id=='admin')
 	{
-		if ($info[0]=='admin')
+		if ($info[1]=='admin')
 		{
 			echo "Current Role";
 		}
@@ -119,7 +119,7 @@
 			include("../../conn.php");
 	if ($id=='admin')
 	{
-		if ($info[0]=='admin')
+		if ($info[1]=='admin')
 		{
 			echo "Current Role";
 		}

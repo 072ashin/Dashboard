@@ -20,9 +20,9 @@
 	if($userno==false)
 	echo "<script language=javascript>alert('You have to login first!');location.href='../../index.php';</script>";
 	else {
-	$sql=mysql_query("select id from adminInfo where ADMINNO = '$id'",$conn) or die(mysql_error());
+	$sql=mysql_query("select * from ADMIN where ADMINNO = '$userno'",$conn) or die(mysql_error());
 	$info=mysql_fetch_array($sql);
-	echo $info[id];
+	echo $info[ADMINNAME];
 	}
 ?></span><a href="../logout.php" title="LOGOUT" class="logout">[logout]</a>
     </div>
